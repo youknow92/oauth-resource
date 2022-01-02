@@ -19,6 +19,7 @@ dependencies {
     implementation 'com.konghq:unirest-java:3.7.04'// api 통신
     implementation 'org.springframework.security:spring-security-jwt:1.1.1.RELEASE' // jwt 토큰 방식을 쓰기위해 필요한 라이브러리
     implementation 'org.projectlombok:lombok' // 변수 get, set 함수 편리하게 만들기 위함
+    annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     implementation('javax.xml.bind:jaxb-api:2.3.0')
