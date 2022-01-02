@@ -1,0 +1,29 @@
+plugins {
+    id 'org.springframework.boot' version '2.6.2'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web' //api
+    implementation 'org.springframework.boot:spring-boot-starter-security' // 스프링 시큐리티
+    implementation 'org.springframework.security.oauth:spring-security-oauth2:2.3.8.RELEASE' //oauth
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    implementation('javax.xml.bind:jaxb-api:2.3.0')
+    implementation('javax.activation:activation:1.1')
+    implementation('org.glassfish.jaxb:jaxb-runtime:2.3.0')
+
+}
+
+test {
+    useJUnitPlatform()
+}
